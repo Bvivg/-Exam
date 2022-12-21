@@ -1,0 +1,139 @@
+.history {
+  margin-top: 6.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-title {
+    color: #07273E;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      font-weight: 700;
+      font-size: 3.125rem;
+      line-height: 3.8125rem;
+    }
+
+    a {
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      text-align: right;
+      text-decoration-line: underline;
+    }
+  }
+
+  &-content {
+    display: flex;
+    margin-top: 2.5rem;
+    gap: 2.5rem;
+
+    :nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    :nth-child(2) {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+    }
+
+    :nth-child(3) {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    &-cards {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 0.625rem;
+
+      &-title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: #FFFFFF;
+      }
+
+      &-desc {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 150%;
+        color: #FFFFFF;
+      }
+
+      &-marijuana {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/img/marijuana.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 23.75rem;
+        width: 23.75rem;
+      }
+
+      &-fridge {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/img/fridge.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 16.75rem;
+        width: 23.75rem;
+      }
+
+      &-gang {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/img/gang.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 26.5625rem;
+        width: 23.75rem;
+      }
+
+      &-civil {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/img/civil.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 8.125rem;
+        width: 23.75rem;
+      }
+
+      &-taxes {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/img/taxes.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 16.25rem;
+        width: 23.75rem;
+      }
+
+      &-dream {
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/img/dream.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 5.3125rem;
+        width: 23.75rem;
+      }
+    }
+
+  }
+}
+@media screen and (max-width: 768px){
+  .history{
+    &-title{
+      span{
+        font-size: 2.5rem;
+        line-height: 3rem;
+      }
+      a{
+        font-size: 1rem;
+        line-height: 1rem;
+      }
+    }
+    &-content{
+      flex-direction: column;
+    }
+  }
+}

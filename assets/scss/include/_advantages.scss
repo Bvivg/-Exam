@@ -1,0 +1,45 @@
+.svg-icons-advantages {
+  width: 120px;
+  height: 120px;
+}
+
+.advantages {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #07273E;
+  gap: 50px;
+  text-align: center;
+
+  &-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+  }
+
+  &-cards {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      color: #07273E;
+      width: 220px;
+
+      text-align: center;
+
+    }
+  }
+}

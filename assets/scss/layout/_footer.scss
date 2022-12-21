@@ -1,0 +1,108 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-bg {
+    padding-top: 70px;
+    background-image: url('../img/img/footer.png');
+    background-repeat: no-repeat;
+    min-height: 580px;
+    background-size: cover;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  &-desc {
+    margin-top: 45px;
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  &-columns {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+    margin-bottom: 25px;
+
+    &-airplane {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+
+  &-column {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    span {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+
+    a {
+      font-weight: 400;
+      width: 150px;
+      font-size: 16px;
+      line-height: 150%;
+      transition: .6s all;
+      color: #FFFFFF;
+
+      &:hover {
+        color: #ff831e;
+      }
+    }
+  }
+}
+
+.svg-icons-logo-column {
+  width: 200px;
+  height: 200px;
+}
+
+.svg-icons-airplane-top-second {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 146px;
+    background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    align-items: center;
+
+    &-columns {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      &-airplane {
+        display: none;
+      }
+    }
+
+    &-column {
+      margin-left: 50px;
+    }
+  }
+    .footer-line-horizontal {
+      display: none;
+    }
+}

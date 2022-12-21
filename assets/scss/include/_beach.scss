@@ -1,0 +1,111 @@
+.beach {
+  background-image: url('../img/img/beach.png');
+  background-repeat: no-repeat;
+  min-height: 780px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+
+  &-polygon {
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-right-width: 100px;
+    border-top-width: 100px;
+    border-bottom-width: 100px;
+    margin-left: 400px;
+    border-left: 130px solid white;
+    opacity: 0.6;
+  }
+
+  &-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    width: 300px;
+
+    &-content {
+      display: flex;
+      padding: 10px 25px;
+      align-items: center;
+      background-color: #ffffff;
+      background: #fff;
+      width: 100%;
+      border-radius: 10px;
+      justify-content: space-between;
+
+      &-airplane {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+      }
+    }
+  }
+}
+
+.svg-icons-comment {
+  width: 16px;
+  height: 16px;
+}
+
+.svg-icons-call {
+  width: 22px;
+  fill: none;
+  stroke: #07273E;
+  height: 22px;
+}
+
+.svg-icons-airplane-top {
+  width: 18px;
+  height: 18px;
+
+}
+
+.svg-icons-search-about {
+  width: 18px;
+  height: 18px;
+}
+
+.line {
+  width: 1px;
+  height: 40px;
+  background: radial-gradient(50% 50% at 50% 50%, #FF831E 0%, rgba(255, 131, 30, 0) 100%);
+}
+
+.airplane-line {
+  position: absolute;
+  top: 13px;
+  width: 1px;
+  height: 10px;
+  background: radial-gradient(50% 50% at 50% 50%, #FF831E 0%, rgba(255, 131, 30, 0) 100%);
+}
+
+@media screen and (max-width: 768px) {
+  .beach {
+    flex-direction: column;
+    background: none;
+    background-image: url('../img/img/beach-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    gap: 30px;
+
+    &-polygon {
+      border-right-width: 50px;
+      border-top-width: 50px;
+      border-bottom-width: 50px;
+      margin-left: 0;
+      width: max-content;
+      margin-left: 100px;
+      border-left: 100px solid white;
+      opacity: 0.6;
+    }
+
+    &-icons {
+      width: 50%;
+    }
+  }
+}

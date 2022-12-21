@@ -1,0 +1,176 @@
+.request {
+  color: #FFFFFF;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+
+  &-feedback {
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+    &-icons {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &-message {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-direction: column;
+    }
+
+    &-subscribe {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-direction: column;
+    }
+
+    &-call {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      flex-direction: column;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+
+  &-bg {
+    padding: 50px;
+    background-image: url('../img/img/question.png');
+    background-repeat: no-repeat;
+    height: 520px;
+    background-size: cover;
+    margin-top: 100px;
+  }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+
+    &-title {
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 61px
+    }
+
+    &-desc {
+      font-weight: 400;
+      font-size: 25px;
+      line-height: 130%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    &-btn {
+      padding: 14px 22px;
+      background-color: #FF831E;
+      border-radius: 5px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #FFFFFF;
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.footer-line-horizontal {
+  background-color: #FFFFFF;
+  height: 1px;
+  width: 1280px;
+}
+.footer-line-vertical{
+  height: 86px;
+  width: 1px;
+  background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0.06) 100%);
+}
+.svg-icon{
+  fill: none;
+  stroke: #FFFFFF;
+  width: 20px;
+  height: 20px;
+}
+.svg-icons-call-footer {
+  fill: none;
+  stroke: #FFFFFF;
+  width: 20px;
+  height: 20px;
+}
+
+.svg-icons-telegram {
+  width: 20px;
+  fill: #FFFFFF;
+  stroke: #FFFFFF;
+  height: 20px;
+}
+
+.svg-icons-viber {
+  width: 20px;
+  height: 20px;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+
+}
+
+.svg-icons-whatsapp {
+  width: 20px;
+  height: 20px;
+
+}
+@media screen and (max-width: 768px) {
+  .request{
+    &-bg{}
+    &-content{
+      &-title {
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 31px
+        }
+      
+        &-desc {
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 100%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+        }
+      
+        &-btn {
+          padding: 10px 15px;
+          background-color: #FF831E;
+          border-radius: 5px;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 22px;
+          color: #FFFFFF;
+          margin-bottom: 60px;
+        }
+    }
+    &-feedback{
+      display: flex;
+      flex-direction: column ;
+      margin: 10px;
+    }
+  }
+  .footer-line-vertical{
+    display: none;
+  }
+    .footer-line-horizontal {
+      display: none;
+    }
+}

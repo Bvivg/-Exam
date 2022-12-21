@@ -1,0 +1,145 @@
+.svg-icons-star {
+  width: 14px;
+  height: 14px;
+}
+
+.comment-rate {
+  margin-top: 100px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.comment-block {
+  transition: .6s all;
+  transform: scale(0.8);
+  background: #D5E9F7;
+  display: flex;
+  width: 520px;
+  flex-direction: column;
+  opacity: 0.5;
+  gap: 20px;
+  padding: 30px;
+
+  &:hover {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    &-title {
+      width: 100px;
+
+      img {
+        width: 75px;
+      }
+
+      & p {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 100%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+      }
+
+    }
+
+    &-paragraph {
+      font-size: 14px;
+      line-height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: flex-end;
+
+      p {
+        font-weight: 400;
+      }
+
+      a {
+        font-weight: 600;
+      }
+    }
+
+  }
+
+  &-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  &-date {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: #07273E;
+    opacity: 0.5;
+  }
+
+  &-btn {
+    margin-left: auto;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    text-align: right;
+    text-decoration-line: underline;
+    color: #07273E;
+  }
+}
+
+@media screen and (max-width: 768px) {}
+
+
+.comment-rate-bg,
+.comment-rate {
+  position: relative;
+  height: 100%;
+}
+
+.comment-rate {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
