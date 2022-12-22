@@ -72,12 +72,15 @@
   height: 200px;
 }
 
-.svg-icons-airplane-top-second {
+.footer-columns-airplane {
   position: relative;
+  display: flex;
+  align-items: center;
 
   &::after {
-    content: '';
     position: absolute;
+    content: '';
+    left: auto;
     width: 2px;
     height: 146px;
     background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);

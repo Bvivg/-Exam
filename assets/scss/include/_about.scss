@@ -76,6 +76,14 @@
 @media screen and (max-width: 768px) {
   .about{
     flex-direction: column;
-    
+    &-comment{
+      flex-direction: column-reverse;
+      gap: 0px;
+      &-btn{
+        position: absolute;
+        
+      }
+
+    }
   }
 }

@@ -13,8 +13,16 @@ burger.addEventListener('click', () => {
   bannerMenu.classList.toggle('is-active');
 });
 
-  var swiper = new Swiper(".mySwiper", {
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "cube",
     pagination: {
-    el: ".swiper-pagination",
-        },
-      });
+      el: ".swiper-pagination",
+      type: "progressbar",
+
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
