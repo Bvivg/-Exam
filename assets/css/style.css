@@ -56,6 +56,10 @@
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header-bg {
   position: fixed;
   width: 100%;

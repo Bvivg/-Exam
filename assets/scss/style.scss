@@ -19,7 +19,9 @@
   max-width: 80rem;
   margin: 0 auto;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 @import './layout/_header.scss';
 @import './include/_banner.scss';
 @import './include/_activity.scss';
